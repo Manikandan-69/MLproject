@@ -1,7 +1,7 @@
 import sys
 """The sys module is versatile and widely used for managing Python programs' interaction with the operating system and runtime environment. 
 It's particularly useful for command-line scripts, debugging, and handling system-level tasks."""
-
+from loggers import logging
 
 def error_message_details(error,error_details:sys):
     _,_,exc_tb=error_details.exc_info()
@@ -24,5 +24,6 @@ if __name__=="__main__":
     try:
         a=1/0
     except Exception as e:
+        logging.info("Division by Zero")
         raise CustomException(e,sys)
 """
