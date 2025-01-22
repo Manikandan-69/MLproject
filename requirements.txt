@@ -3,5 +3,8 @@ numpy
 plotly
 seaborn
 matplotlib
-warning
+scikit-learn
+catboost
+xgboost
+dill
 #-e .
